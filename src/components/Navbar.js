@@ -1,6 +1,8 @@
 import { useWireState } from '@forminator/react-wire'
 import * as store from '../store'
 
+import GitHubIcon from './GitHubIcon'
+
 const linkClassBase = 'inline-block py-2 px-4 no-underline hover:text-gray-900 hover:text-underline'
 const linkClass = `${linkClassBase} text-gray-600`
 const linkClassActive = `${linkClassBase} text-gray-900 font-bold`
@@ -51,6 +53,15 @@ const Navbar = () => {
                         <a className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
                     </li>
                 </ul>
+            </div>
+            
+            <div className="flex justify-center items-center content-center">
+                <a href="https://github.com/wesleybliss/jschain" target="_blank">
+                    <GitHubIcon
+                        className="icon"
+                        width="25"
+                        height="25" />
+                </a>
             </div>
             
         </nav>
